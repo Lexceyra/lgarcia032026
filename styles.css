@@ -1,0 +1,170 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: blue;
+}
+.container{
+    max-width: 75rem;
+    min-height: 10rem;
+    margin: .7rem;
+    background-color: aliceblue;
+    padding: 1rem;
+    margin:auto;
+}
+#pageheader{
+    background-color:khaki;
+    min-height: auto;
+    padding: .25rem;
+}
+#logo{
+    background-image: url(Images/gumballlogo.png);
+    width: 6.25rem;
+    height: 6.25rem;
+    border: 1px solid none;
+}
+#pageheader .container{
+
+    min-height: auto;
+    
+    
+}
+#pageheader nav{
+    text-align: center;
+
+
+}
+#pageheader nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+#pageheader nav ul li{
+    border: 1px solid black;
+    padding: 1rem;
+    margin: 2px;
+    background-color: deeppink;
+}
+#pageheader nav ul li a{
+    color: yellow;
+
+}
+#pageheader nav ul li:hover{
+    background-color   :mediumpurple;
+    transition: .5s;
+    /* padding: 2.5rem; */
+
+}
+#media{
+    background-color: blue;
+    min-height: 10rem;
+    padding: 1rem;
+    background-image: url(Images/heroimagegum.png);
+    background-size: cover;
+    aspect-ratio: 16 / 9;
+}
+#career{
+    background-color: rgb(165, 92, 233);
+    min-height: 10rem;
+    padding: 1rem;
+}
+#pagecontent{
+    background-color: lightgreen;
+    min-height: 10rem;
+    padding: 1rem;
+}
+blockquote{
+
+    padding: .5rem;
+    width: 50%;
+    margin:0 auto;
+    font-size: 1.25rem;
+}
+blockquote + span{
+    
+    padding: 0.75rem;
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    text-align: right;
+}
+#semester1{
+    background-color:aqua;
+    min-height: 10rem;
+    padding: 1rem;
+}
+#semester2{
+    background-color:rgb(255, 137, 78);
+    min-height: 10rem;
+    padding: 1rem;
+}
+#pagecontent{
+    background-color: rgb(222, 32, 153);
+    min-height: 10rem;
+    padding: 1rem;
+}
+#pagefooter{
+    background-color: palegoldenrod;
+    min-height: auto;
+    padding: 1rem;
+}
+#pagefooter .container{
+    background-color: whitesmoke;
+    min-height: auto;
+    text-align: center;
+}
+#aifooter{
+    background-color:rgb(185, 227, 152);
+    padding: 1rem;
+    min-height: auto;
+}
+#aifooter .container{
+    min-height: auto;
+    text-align: center;
+}
+#subfooter{
+    background-color: pink;
+    min-height: 10rem;
+    padding: 1rem;
+    text-align: center;
+
+}
+audio{
+    border: 5px solid steelblue;
+    background-color: steelblue;
+    border-radius: 5rem;
+    display: block;
+    margin: auto;
+    align-content: center;
+}
+
+@media screen and (min-width:600px) {
+    #pageheader nav{
+        position: sticky;
+        flex-direction: row;
+    }
+
+    #pageheader nav ul{
+        margin-top: 2rem;}
+
+    #pageheader nav ul li{
+        display: inline-block;
+    }
+    #pageheader nav{
+        display: block;
+    }
+#pagecontent{
+    background-color: red;
+    }
+}
+@media screen and (min-width:1000){
+    #pagecontent{
+        background-color: purple;
+    }
+
+    /* #media{
+        max-height: 500px;
+        background-size: cover;
+    } */
+}

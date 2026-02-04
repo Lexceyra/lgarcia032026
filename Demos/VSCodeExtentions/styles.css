@@ -1,0 +1,14 @@
+/* ? This is a question comment */
+/* ! This is an alert comment */
+/* TODO This is a ToDo comment */
+/* * This is a regular comment */
+
+body{
+    background-color: lightpink;
+}
+h1{
+    background-color: lightblue;}
+ul{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+}
