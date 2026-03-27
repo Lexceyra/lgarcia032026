@@ -2,7 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #f3bfcf;
+  background-color: slategrey;
 }
 .container {
   max-width: 75rem;
@@ -11,20 +11,35 @@ body {
   background-color: aliceblue;
   padding: 1rem;
   margin: auto;
+  /* border-radius: 3rem; */
 }
 #pageheader {
-  background-color: khaki;
+  background-color: rgb(61, 83, 94);
   min-height: auto;
   padding: 0.25rem;
+  /* width: 2800px; */
+}
+#spotifylogo {
+  display: flex;
+  justify-content: space-between;
 }
 #logo {
-  background-image: url(Images/gumballlogo.png);
+  background-image: url(Images/portfoliologo/semoon.png);
   width: 6.25rem;
   height: 6.25rem;
   border: 1px solid none;
 }
+#logo:hover {
+  background-image: url(Images/portfoliologo/sesun.png);
+  transform: rotateY("angle");
+}
+iframe {
+  display: block;
+  width: 400px;
+}
 #pageheader .container {
   min-height: auto;
+  /* border-radius: 3rem 3rem 0rem 0rem; */
 }
 #pageheader nav {
   text-align: center;
@@ -38,13 +53,13 @@ body {
   border: 1px solid black;
   padding: 1rem;
   margin: 2px;
-  background-color: deeppink;
+  background-color: rgb(99, 130, 129);
 }
 #pageheader nav ul li a {
-  color: yellow;
+  color: rgb(193, 193, 193);
 }
 #pageheader nav ul li:hover {
-  background-color: mediumpurple;
+  background-color: #605c66;
   transition: 0.5s;
   /* padding: 2.5rem; */
 }
@@ -54,12 +69,12 @@ body {
   padding: 1rem;
 }
 #mediaimage {
-  background-image: url(Images/nanaheroimage.jpg);
+  background-image: url(Images/cms3.gif);
   background-size: cover;
   aspect-ratio: 16 / 9;
 }
 #career {
-  background-color: rgb(165, 92, 233);
+  background-color: rgb(42, 64, 107);
   min-height: 10rem;
   padding: 1rem;
 }
@@ -81,23 +96,51 @@ blockquote + span {
   margin: 0 auto;
   text-align: right;
 }
-#semester1 {
-  background-color: aqua;
-  min-height: 10rem;
-  padding: 1rem;
+#semesters {
+  display: flex;
+  align-content: space-around;
+  flex-direction: column;
 }
-#semester2 {
-  background-color: rgb(255, 137, 78);
+
+#semester1 {
+  background-color: #9da5bc;
   min-height: 10rem;
   padding: 1rem;
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#semester1 .container,
+#semester2 .container {
+  flex: 1;
+  height: 90%;
+  max-width: 35.5rem;
+  margin: 0;
+}
+
+#semester2 {
+  background-color: rgb(152, 154, 154);
+  min-height: 10rem;
+  padding: 1rem;
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
+#semesters,
+a:hover {
+  color: #725561;
+}
+a:link {
+  color: #a45e5e;
 }
 #pagecontent {
-  background-color: rgb(222, 32, 153);
+  background-color: rgb(97, 96, 103);
   min-height: 10rem;
   padding: 1rem;
 }
 #pagefooter {
-  background-color: palegoldenrod;
+  background-color: pink;
   min-height: auto;
   padding: 1rem;
 }
@@ -107,15 +150,16 @@ blockquote + span {
   text-align: center;
 }
 #aifooter {
-  background-color: rgb(185, 227, 152);
+  background-color: pink;
   padding: 1rem;
   min-height: auto;
-  border-radius: 3rem;
-  border-radius: 3rem;
+  /* border-radius: 3rem;
+  border-radius: 3rem; */
 }
 #aifooter .container {
   min-height: auto;
   text-align: center;
+  /* border-radius: 2rem; */
 }
 #subfooter {
   background-color: pink;
@@ -131,9 +175,9 @@ audio {
   margin: auto;
   align-content: center;
 }
-#subfooter .container {
-  border-radius: 2rem;
-}
+/* #subfooter .container {
+  border-radius: 0rem 0rem 2rem 2rem;
+} */
 
 @media screen and (min-width: 600px) {
   #pageheader nav {
@@ -152,7 +196,11 @@ audio {
     display: block;
   }
   #pagecontent {
-    background-color: red;
+    background-color: #612c37;
+  }
+  #semesters {
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 1000) {

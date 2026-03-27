@@ -11,11 +11,32 @@
     <!-- Begin Header -->
     <header id="pageheader">
       <div class="container">
-        <a href="index.html"> <div id="logo"></div></a>
+        <div id="spotifylogo">
+          <a href="index.html"> <div id="logo"></div></a>
+          <iframe
+            data-testid="embed-iframe"
+            style="border-radius: 12px"
+            src="https://open.spotify.com/embed/track/5FFQbvn7055P1DvgJDdCBP?utm_source=generator&theme=0"
+            width="50%"
+            height="152"
+            frameborder="0"
+            allowfullscreen=""
+            allow="
+              ?autoplay=1;
+              clipboard-write;
+              encrypted-media;
+              fullscreen;
+              picture-in-picture;
+            "
+            loading="lazy"
+          ></iframe>
+        </div>
         <nav id="topnav">
+          <!-- Icon Library -->
+
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#career">Career</a></li>
+            <li><a href="#career"> Career</a></li>
             <li><a href="#semester1">Semester 1</a></li>
             <li><a href="#semester2">Semester 2</a></li>
             <li><a href="worksamples.html">Work Samples</a></li>
@@ -77,18 +98,26 @@
         <h2>Career</h2>
         <ul>
           <li>
-            <a href="Career/career_action_plan.pdf">Career Action Plan</a>
+            <a target="_blank" href="Career/career_action_plan.pdf"
+              >Career Action Plan</a
+            >
           </li>
-          <li><a href="Career/job_application.pdf">Job Application</a></li>
           <li>
-            <a href="Career/letter_of_introduction.pdf"
+            <a target="_blank" href="Career/job_application.pdf"
+              >Job Application</a
+            >
+          </li>
+          <li>
+            <a target="_blank" href="Career/letter_of_introduction.pdf"
               >Letter of Introduction</a
             >
           </li>
-          <li><a href="Career/references.pdf">References</a></li>
-          <li><a href="Career/resume.pdf">Resume</a></li>
           <li>
-            <a href="Career/letter_of_recommendation.pdf"
+            <a target="_blank" href="Career/references.pdf">References</a>
+          </li>
+          <li><a target="_blank" href="Career/resume.pdf">Resume</a></li>
+          <li>
+            <a target="_blank" href="Career/letter_of_recommendation.pdf"
               >Letter of Recommendation</a
             >
           </li>
@@ -98,96 +127,133 @@
     </section>
     <!-- End Career -->
 
-    <!-- Begin Semester1 -->
-    <section id="semester1">
-      <div class="container">
-        <h2>Semester 1</h2>
-        <ul>
-          <li><a href="Poster/onepiecepost.pdf">Social Contract Poster</a></li>
-          <li>
-            <a href="DeskstopWallpaper/wallpaper.pdf">Desktop Wallpaper</a>
-          </li>
-          <li>
-            <a href="Demos/PortfolioLogo/portfoliologo.pdf"
-              >AI Portfolio Logo</a
-            >
-          </li>
-          <li>
-            <a href="Demos/MaskingWinnieThePooh/ashketchum.pdf">Masked Image</a>
-          </li>
-          <li>
-            <a href="Demos/Lexceyra Garcia - The Terminal Notes.pdf"
-              >Terminal Notes</a
-            >
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- End Semester1 -->
+    <section id="semesters">
+      <!-- Begin Semester1 -->
+      <section id="semester1">
+        <div class="container">
+          <h2>Semester 1</h2>
+          <ul>
+            <li>
+              <a target="_blank" href="Poster/onepiecepost.pdf"
+                >Social Contract Poster</a
+              >
+            </li>
+            <li>
+              <a target="_blank" href="DeskstopWallpaper/wallpaper.pdf"
+                >Desktop Wallpaper</a
+              >
+            </li>
+            <li>
+              <a target="_blank" href="Demos/PortfolioLogo/portfoliologo.pdf"
+                >AI Portfolio Logo</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="Demos/MaskingWinnieThePooh/ashketchum.pdf"
+                >Masked Image</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="Demos/Lexceyra Garcia - The Terminal Notes.pdf"
+                >Terminal Notes</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- End Semester1 -->
 
-    <!-- Begin Semester2 -->
+      <!-- Begin Semester2 -->
 
-    <section id="semester2">
-      <div class="container">
-        <h2>Semester 2</h2>
-        <ul>
-          <li>
-            <a href="Demos/Flexbox001/flexbox_justify_content.html"
-              >FlexboxJC1</a
-            >
-          </li>
-          <li>
-            <a href="Demos/Flexbox001/flexbox_justify_content_application.html"
-              >FlexboxJC2</a
-            >
-          </li>
-          <li>
-            <a href="Semester2/FlexboxJC3A/flexboxjc3a.html">FlexboxJC3A</a>
-          </li>
-          <li>
-            <a href="Semester2/FlexBoxJC3B/flexboxjc3b.html">FlexboxJC3B</a>
-          </li>
-          <li>
-            <a
-              href="Semester2/Flexbox004/FlexboxAlignItems/flexbox_align_items.html"
-              >FlexboxAl1</a
-            >
-          </li>
-          <li>
-            <a href="Semester2/FlexboxJCAI/flexboxJCAI.html">FlexboxJCAI</a>
-          </li>
-          <li>
-            <a href="Demos/Flexbox005/flexbox_align_self_order.html"
-              >FlexboxASO</a
-            >
-          </li>
-          <li>
-            <a href="Demos/Flexbox006/flexbox_wrap_align_content.html"
-              >FlexboxWAC</a
-            >
-          </li>
-          <li>
-            <a href="Semester2/PhotoGallery/photogallery.html">Photo Gallery</a>
-          </li>
-        </ul>
-      </div>
+      <section id="semester2">
+        <div class="container">
+          <h2>Semester 2</h2>
+          <ul>
+            <li>
+              <a
+                target="_blank"
+                href="Demos/Flexbox001/flexbox_justify_content.html"
+                >FlexboxJC1</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="Demos/Flexbox001/flexbox_justify_content_application.html"
+                >FlexboxJC2</a
+              >
+            </li>
+            <li>
+              <a target="_blank" href="Semester2/FlexboxJC3A/flexboxjc3a.html"
+                >FlexboxJC3A</a
+              >
+            </li>
+            <li>
+              <a target="_blank" href="Semester2/FlexBoxJC3B/flexboxjc3b.html"
+                >FlexboxJC3B</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="Semester2/Flexbox004/FlexboxAlignItems/flexbox_align_items.html"
+                >FlexboxAl1</a
+              >
+            </li>
+            <li>
+              <a target="_blank" href="Semester2/FlexboxJCAI/flexboxJCAI.html"
+                >FlexboxJCAI</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="Demos/Flexbox005/flexbox_align_self_order.html"
+                >FlexboxASO</a
+              >
+            </li>
+            <li>
+              <a
+                target="_blank"
+                href="Demos/Flexbox006/flexbox_wrap_align_content.html"
+                >FlexboxWAC</a
+              >
+            </li>
+            <li>
+              <a target="_blank" href="Semester2/PhotoGallery/photogallery.html"
+                >Photo Gallery</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- End Semester2 -->
     </section>
-    <!-- End Semester2 -->
 
     <!-- Begin Footer -->
     <section id="pagefooter">
       <div class="container">
         <nav>
-          <a href="https://chs.chusd.org">CHS</a> |
-          <a href="https://color.adobe.com/create/color-wheel"
+          <a target="_blank" href="https://chs.chusd.org">CHS</a> |
+          <a target="_blank" href="https://color.adobe.com/create/color-wheel"
             >Color Harmonies</a
           >
-          | <a href="https://coalingahuron.aeries.net/">Aeries</a> |
-          <a href="https://classroom.google.com/">Classroom</a> |
-          <a href="https://minga.io/">Minga</a> |
-          <a href="Demos/Lexceyra Garcia - The Terminal Notes.pdf">Terminal</a>
-          | <a href="GitAndGitHub/git.html">Git</a> |
-          <a href="https://github.com/">GitHub</a>
+          |
+          <a target="_blank" href="https://coalingahuron.aeries.net/">Aeries</a>
+          |
+          <a target="_blank" href="https://classroom.google.com/">Classroom</a>
+          | <a target="_blank" href="https://minga.io/">Minga</a> |
+          <a
+            target="_blank"
+            href="Demos/Lexceyra Garcia - The Terminal Notes.pdf"
+            >Terminal</a
+          >
+          | <a target="_blank" href="GitAndGitHub/git.html">Git</a> |
+          <a target="_blank" href="https://github.com/">GitHub</a>
         </nav>
       </div>
     </section>
@@ -197,15 +263,20 @@
     <section id="aifooter">
       <div class="container">
         <nav>
-          <a href="https://www.adobe.com/products/firefly.html">Firefly</a> |
-          <a href="https://suno.com/">Suno</a> |
-          <a href="https://chatgpt.com/">ChatGPT</a> |
-          <a href="https://gemini.google.com/">Gemini</a> |
-          <a href="https://copilot.microsoft.com/">Copilot</a> |
-          <a href="https://claude.ai/">Claude</a> |
-          <a href="https://www.perplexity.ai/">Perplexity</a> |
-          <a href="https://notebooklm.google.com/">NoteBookLM</a>
-          <a href="https://grok.com/">Grok</a>
+          <a target="_blank" href="https://www.adobe.com/products/firefly.html"
+            >Firefly</a
+          >
+          | <a target="_blank" href="https://suno.com/">Suno</a> |
+          <a target="_blank" href="https://chatgpt.com/">ChatGPT</a> |
+          <a target="_blank" href="https://gemini.google.com/">Gemini</a> |
+          <a target="_blank" href="https://copilot.microsoft.com/">Copilot</a> |
+          <a target="_blank" href="https://claude.ai/">Claude</a> |
+          <a target="_blank" href="https://www.perplexity.ai/">Perplexity</a> |
+          <a target="_blank" href="https://notebooklm.google.com/"
+            >NoteBookLM</a
+          >
+          |
+          <a target="_blank" href="https://grok.com/">Grok</a>
         </nav>
       </div>
     </section>
@@ -214,10 +285,27 @@
     <!-- Begin SubFooter -->
     <section id="subfooter">
       <div class="container">
-        &copy; Lexceyra Garcia 2025
-        <audio src="Audio/fromechos.mp3" controls="controls" loop muted>
+        <p>&copy; Lexceyra Garcia 2025</p>
+        <!-- <iframe
+          data-testid="embed-iframe"
+          style="border-radius: 12px"
+          src="https://open.spotify.com/embed/track/4WdUZVSaCUrW4hZlOgKX4k?utm_source=generator"
+          width="50%"
+          height="152"
+          frameborder="0"
+          allowfullscreen=""
+          allow="
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            fullscreen;
+            picture-in-picture;
+          "
+          loading="lazy"
+        ></iframe> -->
+        <!-- <audio src="Audio/fromechos.mp3" controls="controls" loop muted>
           <div class="container"></div>
-        </audio>
+        </audio> -->
 
         <!-- * More robust audio with backup -->
         <!-- <audio>

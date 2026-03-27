@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixed Menu</title>
+    <style>
+        /* mobile first */
+        html{
+            /* temporary - delete */
+            height: 200%;
+
+        }
+        body{
+            background-color: seagreen;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* #fblogoheader{
+            background-color: burlywood;
+            padding: 1rem;
+            margin: 1rem;
+        } */
+        /* delete me */
+        #pageheader{
+            background-color: lime;
+            padding: 1rem;
+            /* default */
+            position: static;
+        }
+        
+        img#logo{
+            width: 100px;
+            height: 100px;
+            display: block;
+            margin: auto;
+            padding: 1rem;
+        }
+        #pageheader h1{
+            text-align: center;
+            color:crimson;
+            background-color: pink;
+        }
+        #pageheader nav{
+            background-color: burlywood;
+            padding: .5rem;
+            border-radius: 10px;
+        }
+        #pageheader ul{
+            background-color: turquoise;
+            padding: .5rem;
+            list-style-type: none;
+            text-align: center;
+            /* flexbox component */
+            display: flex;
+            flex-direction: column;
+            gap: .5rem;
+        }
+        #pageheader li{
+            text-align: center;
+            padding:1rem ;
+            background-color: olive;
+            border: 1px solid white;
+        }
+        #pageheader a {
+            color: aliceblue;
+            text-decoration: none;
+        }
+        /* non page header items */
+        main{
+            padding: 1rem;
+            background-color: lightslategrey;
+        }
+        h2{
+            color: darkkhaki;
+        }
+        p{
+            line-height: 1.5;
+            color: #333;
+        }
+        /* Tablet and desktop CSS */
+
+        @media screen and (min-width:650px){
+            body{
+                background-color: red;
+            }
+            #pageheader{
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                /* flexbox component */
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            #fblogoheader{
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+            }
+            #pageheader nav{
+                min-width: 400px;
+            }
+            #fblogoheader h1{
+                /* flexbox component */
+                background-color: white;
+                padding: 1rem;
+            }
+            #pageheader ul{
+                display: flex;
+                flex-direction: row;
+            }
+            #pageheader li{
+                padding: 1rem;
+                /* margin: auto; */
+                text-align: center;
+                background-color: pink;
+            }
+            main{
+                padding-top: 200px;
+            }
+
+        }
+
+    </style>
+  </head>
+  <body>
+    <!-- Start the logo and header -->
+    <header id="pageheader">
+      <div id="fblogoheader">
+        <img id="logo" src="Images/paws_logo1.png" alt="Paws logo" />
+        <h1>Paw's and Whiskers</h1>
+      </div>
+      <!-- End the logo and header -->
+
+    <!-- Start Navigation -->
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Our pets</a></li>
+        <li><a href="">Testimonials</a></li>
+        <li><a href="">About Us</a></li>
+      </ul>
+    </nav>
+    <!-- End Navigation -->
+    </header>
+    <main>
+        <h2>Fixed Menu</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus error quibusdam porro, doloribus praesentium aliquid adipisci animi soluta laudantium nobis est id quisquam quasi totam dolores fuga hic dolorem culpa tempore harum ipsam eos, maiores molestias. Tempora, aspernatur excepturi non voluptatum illum quibusdam in corrupti delectus. Repellat quos dolorem nam at minima doloribus quidem quas placeat, unde perferendis illo expedita harum nobis magnam dignissimos amet. Labore qui, tempora nobis obcaecati quisquam sed, iusto mollitia, nesciunt sequi atque quo id! Maiores ipsa ipsum autem repudiandae architecto incidunt velit exercitationem nesciunt quo magni sapiente nemo cupiditate sequi, dolores cum iste eaque saepe qui nam dicta. Debitis, atque? Ratione sed officiis ex repellendus minus, cumque mollitia dolores, nostrum nesciunt quo sapiente vel ut nisi, reiciendis pariatur? Minima, quas consequuntur nulla numquam, cumque dolores error quod, in tempora laudantium assumenda. Repellendus, debitis tempora magni alias soluta incidunt necessitatibus laboriosam odit natus rem fuga eveniet perspiciatis doloribus voluptatibus mollitia praesentium eaque ea odio? In eligendi, eveniet ab a laborum nam accusantium ipsa recusandae quae quaerat necessitatibus officia corporis est error repellat deserunt exercitationem iusto nesciunt maiores modi alias sequi sint sunt! Sit hic, aliquid nostrum accusamus officiis obcaecati nam facilis nulla. Illo consequatur consequuntur et accusantium quam voluptates eligendi laborum enim ipsum corporis non nulla veritatis laudantium, voluptatibus assumenda architecto, libero porro tempore perspiciatis cumque, expedita debitis officia. Fuga eos nobis veniam velit dolores nostrum distinctio, maiores facere iste est sed odio harum asperiores eligendi rerum quisquam magni? Ab quisquam error sed perspiciatis a laboriosam possimus debitis voluptate? Tempora eligendi temporibus laudantium pariatur totam odit ipsam veritatis repudiandae modi numquam dignissimos earum perspiciatis, incidunt enim ducimus sunt non. Non placeat praesentium voluptatum fuga, inventore nobis necessitatibus, culpa provident accusamus est iusto repellendus quo quae cum quos. Nihil porro ducimus dolores dolor quidem magni, itaque accusantium!<p></p></p>
+    </main>
+  </body>
+</html>
