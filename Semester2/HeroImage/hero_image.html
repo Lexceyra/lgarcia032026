@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>It's a Dog's Life</title>
+    <link rel="icon" type="image/svg+xml" href="Images/paw-solid (1).svg"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        body{
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+          background-color: black;
+          color: white;
+        }
+        header{
+          background-color: #253d35;
+          padding:15px 30px 15px 30px;
+          border-bottom: 5px solid white;
+        }
+        header h1{
+          font-size: 1.5rem;
+        }
+        /* Hero section */
+        .hero{
+          height: 85vh;
+          /* background-image: linear-gradient(to right,red,blue,lime); */
+          background-image: linear-gradient(rgba(0, 0, 0, 0.5)), url(Images/dog_on_couch.jpg);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: top center;
+          padding: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          margin-bottom: 30px;
+        }
+        .hero-content h2{
+          font-size: 3rem;
+          margin-bottom: 20px;
+        }
+          .hero-content p{
+          font-size: 1.2rem;
+          margin-bottom: 20px;
+        }
+        .hero-content a{
+          display: inline-block;
+          background-color: orange;
+          padding:12px 24px 12px 24px;
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+          border-radius: 8px;
+        }
+        .hero-content a:hover{
+          background-color: #ff6600;
+          transition: 1s;
+        }
+        .intro-content{
+          background-color: white;
+          color: black;
+          padding:10px 20px 10px 20px;
+          margin: auto;
+          min-height: 14rem;
+          max-width: 1200px;
+          border-radius: .5rem;
+          padding: 1rem 1.5rem;
+        }
+        .intro-content h2{
+          font-size: 1.7rem;
+          margin-bottom: 20px;
+          padding: 20px;
+        }
+        .intro-content p{
+          line-height: 1.7;
+          padding: 20px;
+        }
+        /* cards */
+        .services{
+          padding: 50px 30; 
+          background-color: black;
+        }
+        .services h2{
+          text-align: center;
+          margin-bottom: 30px;
+          font-size: 1.7rem;
+        }
+        .fb-cards{
+          color: black;
+          padding: 10px;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          gap: 20px;
+          flex-wrap: wrap;
+        }
+        .card{
+          border: 5px solid silver;
+          background-color: white;
+          padding: 20px 30px;
+          border-radius: 10px;
+          text-align: center;
+          max-width: 300px;
+          margin-bottom: 30px;
+        }
+        .card:hover{
+                    transform: scale(1.10);
+          transition: 1s;
+        }
+        .card h3{
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
+        .card h3 p{
+          margin-bottom: 1rem;
+        }
+        .card a{
+          display: inline-block;
+          background-color: orange;
+          padding:12px 24px 12px 24px;
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+          border-radius: 8px;}
+          .card a:hover{
+            background-color: #ff6600;
+            transition: 1s;
+        }
+        /* footer */
+        footer{
+          background-color: black;
+          padding: 20px;
+          border-top: 5px solid white;
+          text-align: center;
+          color: whites;
+        }
+    </style>
+  </head>
+  <body>
+    <header><h1>It's a Dog's Life</h1></header>
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <h2>Welcome to It's a Dog's Life.</h2>
+          <p>We love dogs more than humans.</p>
+          <a href="#">Get Started</a>
+        </div>
+      </section>
+      <section class="intro"></section>
+      <div class="intro-content">
+        <h2>About Us</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam
+          laudantium sapiente nesciunt odio repellat eos velit aliquid maxime a
+          autem nulla molestias mollitia laborum fugit natus quidem quaerat
+          omnis suscipit voluptatum, rerum totam! Dignissimos officia tempore
+          sapiente ipsam, molestiae aliquid minima hic assumenda tempora sint
+          necessitatibus debitis vitae earum inventore.
+        </p>
+      </div>
+      <section class="services">
+        <h2>Our Services</h2>
+        <div class="fb-cards">
+          <div class="card">
+            <h3>Card One</h3>
+            <p>This is a card. Add a short description of the card here.</p>
+            <a href="#">Learn More</a></div>
+            <div class="card">
+            <h3>Card Two</h3>
+            <p>This is a card. Add a short description of the card here.</p>
+            <a href="#">Learn More</a>
+          </div>
+          <div class="card">
+            <h3>Card Three</h3>
+            <p>This is a card. Add a short description of the card here.</p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2026 It's a Dog's Life. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

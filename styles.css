@@ -2,19 +2,22 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: slategrey;
+  background-color: #83525a;
+  max-width: 100rem;
+  margin: auto;
 }
 .container {
-  max-width: 75rem;
+  /* width: 75rem; */
   min-height: 10rem;
   margin: 0.7rem;
   background-color: aliceblue;
   padding: 1rem;
   margin: auto;
+
   /* border-radius: 3rem; */
 }
 #pageheader {
-  background-color: rgb(61, 83, 94);
+  background-color: rgb(172, 72, 107);
   min-height: auto;
   padding: 0.5rem;
   /* width: 2800px; */
@@ -50,18 +53,23 @@ iframe {
   padding: 0;
 }
 #pageheader nav ul li {
-  border: 1px solid black;
+  border: 2px solid rgb(172, 72, 107);
   padding: 1rem;
   margin: 2px;
-  background-color: rgb(99, 130, 129);
+  background-color: rgb(206, 155, 169);
+  border-radius: 0.1rem;
 }
 #pageheader nav ul li a {
-  color: rgb(193, 193, 193);
+  color: rgb(255, 245, 138);
 }
 #pageheader nav ul li:hover {
-  background-color: #605c66;
+  background-color: #fff389;
   transition: 0.5s;
   /* padding: 2.5rem; */
+}
+#pageheader nav ul li a:hover {
+  color: #ff71d4;
+  transition: 0.5s;
 }
 #media {
   background-color: #f5ebda;
@@ -69,12 +77,12 @@ iframe {
   padding: 1rem;
 }
 #mediaimage {
-  background-image: url(Images/cms3.gif);
+  background-image: url(Images/sv2.gif);
   background-size: cover;
   aspect-ratio: 16 / 9;
 }
 #career {
-  background-color: rgb(42, 64, 107);
+  background-color: #cc9898;
   min-height: 10rem;
   padding: 1rem;
 }
@@ -140,7 +148,7 @@ a:link {
   padding: 1rem;
 }
 #pagefooter {
-  background-color: pink;
+  background-color: #5e565a;
   min-height: auto;
   padding: 1rem;
 }
@@ -162,7 +170,7 @@ a:link {
   /* border-radius: 2rem; */
 }
 #subfooter {
-  background-color: pink;
+  background-color: rgb(42, 64, 107);
   min-height: 10rem;
   padding: 1rem;
   text-align: center;
@@ -196,7 +204,7 @@ audio {
     display: block;
   }
   #pagecontent {
-    background-color: #612c37;
+    background-color: #996e6f;
   }
   #semesters {
     flex-direction: row;
