@@ -3,6 +3,9 @@ html {
 }
 body {
   background-color: #83525a;
+  /* background-image: url(Images/body.jpg); */
+  background-size: cover;
+  background-attachment: fixed;
   max-width: 100rem;
   margin: auto;
 }
@@ -20,6 +23,7 @@ body {
   background-color: rgb(172, 72, 107);
   min-height: auto;
   padding: 0.5rem;
+  border: 5px solid rgb(172, 72, 107);
   /* width: 2800px; */
 }
 #spotifylogo {
@@ -27,18 +31,17 @@ body {
   justify-content: space-between;
 }
 #logo {
-  background-image: url(Images/portfoliologo/semoon.png);
-  width: 6.25rem;
-  height: 6.25rem;
+  background-image: url(Images/portfoliologo/cats.png);
+  width: 6.2rem;
+  height: 6.2rem;
   border: 1px solid none;
 }
-#logo:hover {
-  background-image: url(Images/portfoliologo/sesun.png);
-  transform: rotateY("angle");
-}
+
 iframe {
   display: block;
+  margin: auto;
   width: 400px;
+  align-content: center;
 }
 #pageheader .container {
   min-height: auto;
@@ -77,7 +80,7 @@ iframe {
   padding: 1rem;
 }
 #mediaimage {
-  background-image: url(Images/sv2.gif);
+  background-image: url(Images/gifbg.gif);
   background-size: cover;
   aspect-ratio: 16 / 9;
 }
@@ -85,11 +88,20 @@ iframe {
   background-color: #cc9898;
   min-height: 10rem;
   padding: 1rem;
+  color: #e49090;
 }
 #pagecontent {
   background-color: lightgreen;
   min-height: 10rem;
   padding: 1rem;
+  color: #eb9595;
+}
+#career a {
+  text-decoration: none;
+  color: #c16161;
+}
+#career a:hover {
+  color: #e49090;
 }
 blockquote {
   padding: 0.5rem;
@@ -111,12 +123,13 @@ blockquote + span {
 }
 
 #semester1 {
-  background-color: #9da5bc;
+  background-color: #f3bc92;
   min-height: 10rem;
   padding: 1rem;
   flex: 1;
   display: flex;
   justify-content: flex-end;
+  color: #e4abab;
 }
 
 #semester1 .container,
@@ -128,37 +141,53 @@ blockquote + span {
 }
 
 #semester2 {
-  background-color: rgb(152, 154, 154);
+  background-color: #e4abab;
   min-height: 10rem;
   padding: 1rem;
   flex: 1;
   display: flex;
   justify-content: flex-start;
+  color: #f3bc92;
 }
-#semesters,
+#semester1 a {
+  text-decoration: none;
+  color: #e4abab;
+}
+#semester1 a:hover {
+  color: #f3bc92;
+}
+#semester2 a {
+  text-decoration: none;
+  color: #f3bc92;
+}
+#semester2 a:hover {
+  color: #e4abab;
+}
+/* #semesters,
 a:hover {
   color: #725561;
 }
-a:link {
+#semesters a {
+  text-decoration: none;
   color: #a45e5e;
-}
+} */
 #pagecontent {
-  background-color: rgb(97, 96, 103);
+  background-color: #cc9898;
   min-height: 10rem;
   padding: 1rem;
 }
 #pagefooter {
-  background-color: #5e565a;
+  background-color: #cc9898;
   min-height: auto;
   padding: 1rem;
 }
 #pagefooter .container {
-  background-color: whitesmoke;
+  background-color: white;
   min-height: auto;
   text-align: center;
 }
 #aifooter {
-  background-color: pink;
+  background-color: #996e6f;
   padding: 1rem;
   min-height: auto;
   /* border-radius: 3rem;
@@ -170,7 +199,7 @@ a:link {
   /* border-radius: 2rem; */
 }
 #subfooter {
-  background-color: rgb(42, 64, 107);
+  background-color: rgb(172, 72, 107);
   min-height: 10rem;
   padding: 1rem;
   text-align: center;
