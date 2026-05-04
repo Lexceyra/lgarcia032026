@@ -8,6 +8,7 @@ body {
   background-attachment: fixed;
   max-width: 100rem;
   margin: auto;
+  font-family: "Alice", sans-serif;
 }
 .container {
   /* width: 75rem; */
@@ -80,7 +81,7 @@ iframe {
   padding: 1rem;
 }
 #mediaimage {
-  background-image: url(Images/gifbg.gif);
+  background-image: url(Images/portfoliologo/pika.gif);
   background-size: cover;
   aspect-ratio: 16 / 9;
 }
@@ -212,6 +213,8 @@ audio {
   margin: auto;
   align-content: center;
 }
+/* google fonts */
+
 /* #subfooter .container {
   border-radius: 0rem 0rem 2rem 2rem;
 } */
