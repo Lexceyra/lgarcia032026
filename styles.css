@@ -21,10 +21,10 @@ body {
   /* border-radius: 3rem; */
 }
 #pageheader {
-  background-color: rgb(172, 72, 107);
+  background-color: rgb(160, 101, 122);
   min-height: auto;
   padding: 0.5rem;
-  border: 5px solid rgb(172, 72, 107);
+  border: 5px solid rgb(160, 101, 122);
   /* width: 2800px; */
 }
 #spotifylogo {
@@ -77,13 +77,15 @@ iframe {
 }
 #media {
   background-color: #f5ebda;
-  min-height: 10rem;
+  /* min-height: 10rem; */
   padding: 1rem;
 }
 #mediaimage {
-  background-image: url(Images/portfoliologo/pika.gif);
+  background-image: url(Images/sv.gif);
   background-size: cover;
-  aspect-ratio: 16 / 9;
+  /* aspect-ratio: 16 / 9; */
+  height: 60vh;
+  background-position: center center;
 }
 #career {
   background-color: #cc9898;
@@ -209,10 +211,7 @@ a:hover {
   padding: 1rem;
   text-align: center;
 }
-/* h2 {
-  font-size: 2.5rem;
-  font-family: "Jacques Francois Shadow", serif;
-} */
+
 audio {
   border: 5px solid steelblue;
   background-color: steelblue;
@@ -223,9 +222,9 @@ audio {
 }
 /* google fonts */
 
-/* #subfooter .container {
-  border-radius: 0rem 0rem 2rem 2rem;
-} */
+.font1 {
+  font-family: "Emilys Candy", cursive;
+}
 
 @media screen and (min-width: 600px) {
   #pageheader nav {
