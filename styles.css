@@ -2,8 +2,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background-color: #83525a;
-  /* background-image: url(Images/body.jpg); */
+  background: linear-gradient(180deg, #ffd4de 0%, #ffaccc 45%, #ffe8a7 100%);
   background-size: cover;
   background-attachment: fixed;
   max-width: 100rem;
@@ -11,31 +10,28 @@ body {
   font-family: "Alice", sans-serif;
 }
 .container {
-  /* width: 75rem; */
   min-height: 10rem;
   margin: 0.7rem;
-  background-color: aliceblue;
+  background-color: rgba(255, 238, 207, 0.92);
   padding: 1rem;
   margin: auto;
-
-  /* border-radius: 3rem; */
 }
 #pageheader {
-  background-color: rgb(160, 101, 122);
+  background-color: #ffb3c8;
   min-height: auto;
   padding: 0.5rem;
-  border: 5px solid rgb(160, 101, 122);
-  /* width: 2800px; */
+  border: 5px solid rgba(255, 136, 166, 0.95);
 }
 #spotifylogo {
   display: flex;
   justify-content: space-between;
 }
 #logo {
-  background-image: url(Images/portfoliologo/cats.png);
+  background-image: url(Images/portfoliologo/fish2.png);
+  border-radius: 70%;
   width: 6.2rem;
   height: 6.2rem;
-  border: 1px solid none;
+  border: none;
 }
 
 iframe {
@@ -57,62 +53,62 @@ iframe {
   padding: 0;
 }
 #pageheader nav ul li {
-  border: 2px solid rgb(172, 72, 107);
+  border: 2px solid #d14072;
   padding: 1rem;
   margin: 2px;
-  background-color: rgb(206, 155, 169);
-  border-radius: 0.1rem;
+  background-color: rgba(255, 168, 195, 0.95);
+  border-radius: 0.5rem;
 }
 #pageheader nav ul li a {
-  color: rgb(255, 245, 138);
+  color: #b21c6c;
 }
 #pageheader nav ul li:hover {
-  background-color: #fff389;
+  background-color: rgba(255, 232, 151, 0.95);
   transition: 0.5s;
-  /* padding: 2.5rem; */
 }
 #pageheader nav ul li a:hover {
-  color: #ff71d4;
+  color: #ce507c;
   transition: 0.5s;
 }
 #media {
-  background-color: #f5ebda;
-  /* min-height: 10rem; */
+  background-color: rgba(255, 206, 226, 0.8);
   padding: 1rem;
 }
 #mediaimage {
-  background-image: url(Images/sv.gif);
+  background-image: url(Images/ponyo2.gif);
   background-size: cover;
-  /* aspect-ratio: 16 / 9; */
-  height: 60vh;
+  aspect-ratio: 16 / 9;
   background-position: center center;
 }
 #career {
-  background-color: #cc9898;
+  background-color: rgba(255, 244, 174, 0.96);
   min-height: 10rem;
   padding: 1rem;
-  color: #e49090;
+  color: #d56092;
   font-size: 1.2rem;
 }
 #pagecontent {
-  background-color: lightgreen;
+  background-color: rgba(255, 185, 214, 0.7);
   min-height: 10rem;
   padding: 1rem;
-  color: #eb9595;
+  color: #a83064;
   font-size: 1.2rem;
 }
 #career a {
   text-decoration: none;
-  color: #c16161;
+  color: #c83374;
 }
 #career a:hover {
-  color: #e49090;
+  color: #ffce60;
 }
 blockquote {
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
   width: 50%;
   margin: 0 auto;
   font-size: 1.25rem;
+  color: #c2457b;
+  border-left: 4px solid rgba(255, 160, 197, 0.9);
+  background-color: rgba(255, 244, 174, 0.9);
 }
 blockquote + span {
   padding: 0.75rem;
@@ -120,6 +116,7 @@ blockquote + span {
   width: 50%;
   margin: 0 auto;
   text-align: right;
+  color: #c83374;
 }
 #semesters {
   display: flex;
@@ -130,13 +127,13 @@ blockquote + span {
 }
 
 #semester1 {
-  background-color: #f3bc92;
+  background-color: rgba(255, 177, 187, 0.95);
   min-height: 10rem;
   padding: 1rem;
   flex: 1;
   display: flex;
   justify-content: flex-end;
-  color: #e4abab;
+  color: #ac3066;
 }
 
 #semester1 .container,
@@ -148,73 +145,121 @@ blockquote + span {
 }
 
 #semester2 {
-  background-color: #e4abab;
+  background-color: rgba(255, 234, 168, 0.95);
   min-height: 10rem;
   padding: 1rem;
   flex: 1;
   display: flex;
   justify-content: flex-start;
-  color: #f3bc92;
+  color: #ac3066;
+}
+#worksamples {
+  background-color: rgba(255, 209, 220, 0.95);
+  min-height: 10rem;
+  padding: 1rem;
+  color: #c84f84;
+  font-size: 1.2rem;
+}
+#worksamples ul li {
+  padding: 0.5rem;
+}
+#worksamples ul li a {
+  text-decoration: none;
+  color: #c83374;
+}
+#certificates {
+  background-color: rgba(255, 244, 174, 0.95);
+  min-height: 10rem;
+  padding: 1rem;
+  color: #6a1f40;
+  font-size: 1.2rem;
+}
+#certificates ul {
+  list-style-type: none;
+}
+#certificates ul li {
+  padding: 0.5rem;
+}
+#certificates ul li a {
+  text-decoration: none;
+  color: #d45a8f;
+}
+#certificates h2 {
+  color: #d64f7a;
 }
 #semester1 a {
   text-decoration: none;
-  color: #e4abab;
+  color: #c95889;
 }
 #semester1 a:hover {
-  color: #f3bc92;
+  color: #ffb94c;
 }
 #semester2 a {
   text-decoration: none;
-  color: #f3bc92;
+  color: #c95889;
 }
 #semester2 a:hover {
-  color: #e4abab;
+  color: #ffb94c;
 }
 /* #semesters,
 a:hover {
-  color: #725561;
+  color: #6a1f40;
 }
 #semesters a {
   text-decoration: none;
-  color: #a45e5e;
+  color: #cc507d;
 } */
 #pagecontent {
-  background-color: #cc9898;
+  background-color: rgba(255, 195, 214, 0.8);
   min-height: 10rem;
   padding: 1rem;
 }
 #pagefooter {
-  background-color: #cc9898;
+  background-color: rgba(255, 168, 195, 0.95);
   min-height: auto;
   padding: 1rem;
+  color: #d64f7a;
+}
+#pagefooter p,
+#pagefooter a {
+  color: #d64f7a;
 }
 #pagefooter .container {
-  background-color: white;
+  background-color: rgba(255, 245, 218, 0.95);
   min-height: auto;
   text-align: center;
 }
 #aifooter {
-  background-color: #996e6f;
+  background-color: rgba(255, 232, 151, 0.95);
   padding: 1rem;
   min-height: auto;
-  /* border-radius: 3rem;
-  border-radius: 3rem; */
 }
 #aifooter .container {
   min-height: auto;
   text-align: center;
-  /* border-radius: 2rem; */
 }
 #subfooter {
-  background-color: rgb(172, 72, 107);
+  background-color: rgba(255, 209, 220, 0.95);
   min-height: 10rem;
   padding: 1rem;
   text-align: center;
 }
+#subfooter p {
+  color: #d74d8d;
+}
+#aifooter a,
+#subfooter a {
+  color: #d74d8d;
+  text-decoration: none;
+}
+#aifooter a:hover,
+#subfooter a:hover {
+  color: #ff9ec1;
+}
 
 audio {
-  border: 5px solid steelblue;
-  background-color: steelblue;
+  border: 5px solid #ffb94c;
+  background-color: rgba(255, 173, 85, 0.9);
   border-radius: 3rem;
   display: block;
   margin: auto;
@@ -224,6 +269,93 @@ audio {
 
 .font1 {
   font-family: "Emilys Candy", cursive;
+}
+
+/* Accordion Styles */
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.accordion-item {
+  border: 2px solid #d14072;
+  /* border-radius: 0.5rem; */
+  overflow: hidden;
+  background-color: rgba(255, 245, 218, 0.96);
+}
+
+.accordion-header {
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(255, 145, 181, 0.95);
+  color: #3b1228;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.accordion-header:hover {
+  background-color: rgba(255, 232, 151, 0.95);
+  transition: 0.3s;
+}
+
+.accordion-header.active {
+  background-color: #d14072;
+}
+
+.accordion-icon {
+  transition: transform 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.accordion-header.active .accordion-icon {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    max-height 0.3s ease,
+    opacity 0.3s ease;
+  background-color: rgba(255, 245, 218, 0.98);
+}
+
+.accordion-content ul {
+  list-style-type: none;
+  padding: 1rem;
+  margin: 0;
+}
+
+.accordion-content ul li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255, 173, 185, 0.4);
+}
+
+.accordion-content ul li:last-child {
+  border-bottom: none;
+}
+
+.accordion-content ul li a {
+  text-decoration: none;
+  color: #c83374;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.accordion-content ul li a:hover {
+  color: #d14072;
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 600px) {
@@ -243,7 +375,7 @@ audio {
     display: block;
   }
   #pagecontent {
-    background-color: #996e6f;
+    background-color: rgba(255, 195, 214, 0.75);
   }
   #semesters {
     flex-direction: row;
@@ -252,7 +384,7 @@ audio {
 }
 @media screen and (min-width: 1000) {
   #pagecontent {
-    background-color: purple;
+    background-color: rgba(255, 195, 214, 0.9);
   }
 
   /* #media{
